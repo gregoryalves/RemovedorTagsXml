@@ -5,7 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace GregArtifacts
+namespace RemovedorTagsXml
 {
     public partial class Form1 : Form
     {

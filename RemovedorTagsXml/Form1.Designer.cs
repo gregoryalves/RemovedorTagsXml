@@ -1,4 +1,4 @@
-﻿namespace GregArtifacts
+﻿namespace RemovedorTagsXml
 {
     partial class Form1
     {
@@ -122,7 +122,7 @@
             this.Controls.Add(this.txtDiretorio);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Removedor de tags XML";
             this.ResumeLayout(false);
             this.PerformLayout();
 

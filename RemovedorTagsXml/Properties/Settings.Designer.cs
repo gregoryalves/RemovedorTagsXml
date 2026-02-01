@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GregArtifacts.Properties
+namespace RemovedorTagsXml.Properties
 {
 
 
