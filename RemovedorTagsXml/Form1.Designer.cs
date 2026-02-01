@@ -1,4 +1,6 @@
-﻿namespace RemovedorTagsXml
+﻿using System.Windows.Forms;
+
+namespace RemovedorTagsXml
 {
     partial class Form1
     {
@@ -62,7 +64,7 @@
             this.btnBrowse.TabIndex = 2;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = true;
-            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            this.btnBrowse.Click += new System.EventHandler(this.BuscarDiretorioClick);
             // 
             // label2
             // 
@@ -85,24 +87,24 @@
             // 
             this.btnProcessar.Location = new System.Drawing.Point(9, 55);
             this.btnProcessar.Name = "btnProcessar";
-            this.btnProcessar.Size = new System.Drawing.Size(429, 23);
+            this.btnProcessar.Size = new System.Drawing.Size(429, 38);
             this.btnProcessar.TabIndex = 5;
             this.btnProcessar.Text = "Processar";
             this.btnProcessar.UseVisualStyleBackColor = true;
-            this.btnProcessar.Click += new System.EventHandler(this.btnProcessar_Click);
+            this.btnProcessar.Click += new System.EventHandler(this.ProcessarClick);
             // 
             // txtLog
             // 
-            this.txtLog.Location = new System.Drawing.Point(9, 113);
+            this.txtLog.Location = new System.Drawing.Point(9, 128);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(429, 137);
+            this.txtLog.Size = new System.Drawing.Size(429, 188);
             this.txtLog.TabIndex = 6;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 84);
+            this.progressBar1.Location = new System.Drawing.Point(12, 99);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(426, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -112,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 268);
+            this.ClientSize = new System.Drawing.Size(452, 328);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnProcessar);
@@ -130,14 +132,110 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDiretorio;
-        private System.Windows.Forms.Button btnBrowse;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTag;
-        private System.Windows.Forms.Button btnProcessar;
-        private System.Windows.Forms.TextBox txtLog;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private Label label1;
+        private TextBox txtDiretorio;
+        private Button btnBrowse;
+        private Label label2;
+        private TextBox txtTag;
+        private Button btnProcessar;
+        private TextBox txtLog;
+        private ProgressBar progressBar1;
+
+        public Label LabelDiretorio 
+        {
+            get
+            {
+                return label1;
+            }
+            set
+            {
+                label1 = value;
+            }
+        }
+
+        public TextBox TxtDiretorio
+        {
+            get
+            {
+                return txtDiretorio;
+            }
+            set
+            {
+                txtDiretorio = value;
+            }
+        }
+
+        public Button BtnBrowse
+        {
+            get
+            {
+                return btnBrowse;
+            }
+            set
+            {
+                btnBrowse = value;
+            }
+        }
+
+        public Label LabelTag
+        {
+            get
+            {
+                return label2;
+            }
+            set
+            {
+                label2 = value;
+            }
+        }
+
+        public TextBox TxtTag
+        {
+            get
+            {
+                return txtTag;
+            }
+            set
+            {
+                txtTag = value;
+            }
+        }
+
+        public Button BtnProcessar
+        {
+            get
+            {
+                return btnProcessar;
+            }
+            set
+            {
+                btnProcessar = value;
+            }
+        }
+
+        public TextBox TxtLog
+        {
+            get
+            {
+                return txtLog;
+            }
+            set
+            {
+                txtLog = value;
+            }
+        }
+
+        public ProgressBar ProgressBar
+        {
+            get
+            {
+                return progressBar1;
+            }
+            set
+            {
+                progressBar1 = value;
+            }
+        }
     }
 }
 
