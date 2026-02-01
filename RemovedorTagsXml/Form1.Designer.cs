@@ -53,14 +53,14 @@ namespace RemovedorTagsXml
             // 
             this.txtDiretorio.Location = new System.Drawing.Point(9, 27);
             this.txtDiretorio.Name = "txtDiretorio";
-            this.txtDiretorio.Size = new System.Drawing.Size(253, 22);
+            this.txtDiretorio.Size = new System.Drawing.Size(510, 22);
             this.txtDiretorio.TabIndex = 1;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(268, 26);
+            this.btnBrowse.Location = new System.Drawing.Point(525, 27);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(26, 23);
+            this.btnBrowse.Size = new System.Drawing.Size(34, 23);
             this.btnBrowse.TabIndex = 2;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@ namespace RemovedorTagsXml
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(300, 9);
+            this.label2.Location = new System.Drawing.Point(565, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 3;
@@ -77,9 +77,9 @@ namespace RemovedorTagsXml
             // 
             // txtTag
             // 
-            this.txtTag.Location = new System.Drawing.Point(303, 27);
+            this.txtTag.Location = new System.Drawing.Point(568, 27);
             this.txtTag.Name = "txtTag";
-            this.txtTag.Size = new System.Drawing.Size(135, 22);
+            this.txtTag.Size = new System.Drawing.Size(183, 22);
             this.txtTag.TabIndex = 4;
             this.txtTag.Text = "TransitoryVars";
             // 
@@ -87,9 +87,9 @@ namespace RemovedorTagsXml
             // 
             this.btnProcessar.Location = new System.Drawing.Point(9, 55);
             this.btnProcessar.Name = "btnProcessar";
-            this.btnProcessar.Size = new System.Drawing.Size(429, 38);
+            this.btnProcessar.Size = new System.Drawing.Size(742, 38);
             this.btnProcessar.TabIndex = 5;
-            this.btnProcessar.Text = "Processar";
+            this.btnProcessar.Text = "Remover Tags";
             this.btnProcessar.UseVisualStyleBackColor = true;
             this.btnProcessar.Click += new System.EventHandler(this.ProcessarClick);
             // 
@@ -98,15 +98,16 @@ namespace RemovedorTagsXml
             this.txtLog.Location = new System.Drawing.Point(9, 128);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
+            this.txtLog.ReadOnly = true;
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(429, 188);
+            this.txtLog.Size = new System.Drawing.Size(740, 312);
             this.txtLog.TabIndex = 6;
             // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(12, 99);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(426, 23);
+            this.progressBar1.Size = new System.Drawing.Size(737, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 7;
             // 
@@ -114,7 +115,7 @@ namespace RemovedorTagsXml
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 328);
+            this.ClientSize = new System.Drawing.Size(761, 452);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnProcessar);
