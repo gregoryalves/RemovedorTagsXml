@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1777CACF-FE22-41B2-97C5-A959230950F0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GregArtifacts</RootNamespace>
-    <AssemblyName>GregArtifacts</AssemblyName>
+    <RootNamespace>RemovedorTagsXml</RootNamespace>
+    <AssemblyName>RemovedorTagsXml</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -67,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
